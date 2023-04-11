@@ -1,37 +1,202 @@
-*{
+/* regole generali */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
+    margin: 0 auto;
 }
-.container{
+
+.container {
     width: 100%;
     height: calc(100vh - 80px);
     display: flex;
 }
-nav{
-   width: 250px;
-   height: 100%;
+
+.menuphone {
+    width: 50px;
+    height: 100%
 }
-main{
+.menudesktop{
+    display: none;
+}
+.shadow {
+    height: 80px;
     width: 100%;
+    position: fixed;
+    z-index: 800px;
+}
+
+main {
+    width: calc(100% - 50px);
+    height: calc(100%-80px);
+    overflow: hidden;
+}
+
+.menu-col {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 10px;
+}
+.menu-item{
+    padding: 10px 0;
+}
+
+footer {
+    height: 80px;
+
+}
+
+/* regole navigator */
+.favicon-col {
+    display: flex;
+    justify-content: center;
+
+}
+
+#favicon {
+    width: 25px;
+    filter: brightness(0) saturate(100%) invert(101%) sepia(20%) saturate(174%) hue-rotate(13deg) brightness(104%) contrast(118%);
+}
+
+.home-col {
+    position: relative;
+}
+
+.search-col {
+    position: relative;
+}
+
+.library-col {
+    position: relative;
+}
+
+#home {
+    width: 25px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+#search {
+    width: 25px;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+}
+
+#libreria {
+    width: 25px;
+    position: absolute;
+    top: 80px;
+    left: 12px;
+}
+
+/* regole logo-foot */
+.logo-foot {
+    display: flex;
     height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
 }
-footer{
- height: 80px;
+
+.arrow {
+    font-size: 25px;
+    position: absolute;
+    bottom: 70px;
+    left: 12px;
+    color: white;
 }
+
+.user {
+    font-size: 25px;
+    position: absolute;
+    bottom: 30px;
+    left: 12px;
+    color: white;
+}
+/* regole recently played */
+.music-row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.music-col{
+    width: calc(100%/2);
+}
+.music-title{
+    width: 80%;
+    margin: 0 auto;  
+    font-size: 10px;
+    padding: 20px 0;
+}
+.music-img{
+    height: 120px;
+    width: 120px;
+}
+.music-img-popular{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.info{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+/* versione smartphone nav menu desktop */
+@media screen and (min-width:420px) {
+    /* regole nav */
+    .menudesktop{
+        display: block;
+        width: 150px;
+    }
+    .menuphone{
+        display: none;
+    }
+    .logo-desktop{
+     width: 80%;
+     margin: 0 auto;
+    }
+    #icon{
+       width: 100px; 
+    }
+}
+/* versione tablet */
+@media screen and (min-width:780px) {}
+
+/* versionne desktop */
+@media screen and (max-width:1280px) {}
 
 /* debug */
 
-nav{
+nav {
     background-color: crimson;
 }
-main{
+
+main {
     background-color: darkorange;
 }
-footer{
+
+footer {
     background-color: brown;
+}
+
+.shadow {
+    background-color: black;
 }
