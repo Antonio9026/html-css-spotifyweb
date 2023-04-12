@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100vh;
+    font-family:  'Montserrat', sans-serif;;
 }
 
 .container {
@@ -18,19 +19,23 @@ body {
 nav {
     width: 50px;
     height: 100%;
+    background-color: #000000;
+    color: #646464;
 }
 
 main {
     width: 100%;
     height: 100%;
     overflow: scroll;
-   
+    background-color: #141922;
+    color: white;
+
 }
 
 
 footer {
     height: 80px;
-   ;
+    background-color: #282828;
 }
 
 /* regole navigatore smartphone */
@@ -53,7 +58,7 @@ footer {
 }
 
 .nav-down {
-    height: 50%;
+    margin-top: 20px;
 }
 
 .nav-down-list {
@@ -72,15 +77,18 @@ footer {
 
 .logo-img {
     width: 20px;
+    color: #646464;
 
 }
 
 .home-img {
     width: 20px;
+    color: #646464;
 }
 
 .search-img {
     width: 20px;
+    color: #646464;
 }
 
 .libreria-img {
@@ -89,16 +97,54 @@ footer {
 
 .fa-circle-down {
     font-size: 20px;
-    color: white;
+    color: #646464;
 }
 
 .fa-user {
     font-size: 20px;
-    color: white;
+    color: #646464;
 }
+
 
 li {
     padding: 5px 0;
+}
+
+/* <!-- navigatore desktop --> */
+.nav-desktop-list {
+    list-style-type: none;
+
+
+}
+.img-col:hover{
+color: white;
+}
+.nav-center-li {
+    font-size: 10px;
+}
+
+.nav-center-li-top:hover {
+    color: white;
+}
+
+.nav-center-li:hover {
+    color: white;
+}
+
+.fa-square-plus {
+    font-size: 30px;
+    padding-right: 10px;
+    color: #646464;
+}
+
+.fa-square-plus:hover {
+    color: white;
+}
+
+.title-center-li {
+    font-size: 15px;
+    margin-right: 20px;
+    color: white;
 }
 
 /* regole music menu */
@@ -106,7 +152,7 @@ li {
     height: 80px;
     background-color: black;
     opacity: 0.5;
-  
+
 }
 
 /* <!--REGOLE HEADER MENU --> */
@@ -121,6 +167,43 @@ li {
 .header-menu-li {
     font-size: 10px;
     padding: 10px 10px;
+}
+
+.shadow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 30px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+
+}
+
+/* <!-- regole menu musica --> */
+.first-row-col {
+    position: relative;
+}
+
+.hover-play {
+    
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+
+.hover-play:hover {
+ visibility: visible;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
 }
 
 /* <!-- prima riga menu musica --> */
@@ -153,6 +236,12 @@ li {
     width: 120px;
 }
 
+.first-row-img:hover {
+    background-color: black;
+    opacity: 0.5;
+
+}
+
 .first-row-title {
     font-size: 13px;
 }
@@ -163,9 +252,9 @@ li {
 }
 
 h1 {
-    width: 80%;
+    width: 87%;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px 0;
 }
 
@@ -180,10 +269,10 @@ h1 {
 }
 
 .row-p {
-    width: 80%;
+    width: 87%;
     margin: 0 auto;
-
     padding-bottom: 20px;
+    font-size: 10px;
 }
 
 /* <!-- regole terza riga menu musica --> */
@@ -199,42 +288,109 @@ h1 {
     width: 120px;
     border-radius: 50%;
 }
+
 /* regole footer */
-.footer-container{
-    width: 90%;
+.footer-container {
+    width: 95%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
-.row-center{
+
+/* <!-- regole first row --> */
+.music-in-play {
+
+    display: flex;
+}
+
+.row-first {
+    width: calc(100/3);
+    display: flex;
+}
+
+.music-play-name {
+    margin-left: 10px;
+
+}
+
+.footer-img {
+    width: 40px;
+}
+
+.fa-heart {
+    position: absolute;
+    left: 35px;
+}
+
+.fa-folder {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+/* <!-- regole center row --> */
+.row-center {
+    width: calc(100/3);
     text-align: center;
 }
-.footer-img{
-    width: 30px;
-}
-.row-right{
-    display: flex;
-   
-}
-.col-right{
-   margin-top: 5px;
-   margin-left: 5px;
-}
-.row-first{
-    display: flex;
-}
-.col-down{
+
+.col-down {
     height: 5px;
-    width: 100px;
-    background-color: white;
+    width: 200px;
+    background-color: #585858;
+    margin-left: 10px;
 }
-.col-right{
+
+.fa-code-compare {
+    padding: 10px 10px;
+}
+
+.fa-backward-step {
+    padding: 10px 10px;
+}
+
+.fa-circle-play {
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+.fa-forward-step {
+    padding: 10px 10px;
+}
+
+.fa-arrow-rotate-righ {
+    padding: 10px 10px;
+}
+
+/* <!-- regole right row --> */
+
+.row-right {
+    width: calc(100/3);
+    display: flex;
+
+}
+
+.col-right {
     height: 5px;
     width: 60px;
-    background-color: white;
+    background-color: #585858;
+    margin-top: 5px;
+    margin-left: 5px;
 }
+
+.fonts-row {
+    position: relative;
+
+
+}
+
+.fa-display {
+    padding: 0 10px;
+}
+
 
 
 /* regole small screen */
@@ -249,12 +405,14 @@ h1 {
         display: block;
         width: 90%;
         margin: 0 auto;
-        color: white;
+
+
     }
 
     nav {
         width: 250px;
         height: 100%;
+
     }
 
     /* <!--regole navigatore superiore --> */
@@ -264,7 +422,13 @@ h1 {
 
     .nav-center {
         margin-top: 40px;
-        margin-bottom: 180px;
+        margin-bottom: 220px;
+    }
+
+    /* regole nav down */
+
+    .fa-circle-down {
+        font-size: 10px;
     }
 
 }
@@ -314,27 +478,44 @@ h1 {
     .third-col {
         padding: 0 10px;
     }
-    
+
+    /* regole footer */
+
+
+    .fonts-row {
+        position: relative;
+    }
+
+    .fa-folder {
+        position: absolute;
+        top: 15px;
+    }
+
+
 }
 
 /* regloe deskto */
 @media screen and (min-width:1280px) {
+
     /* <!-- prima riga menu musica --> */
-    .container-first-row{
+    .container-first-row {
         width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
+
     .first-row {
         width: 100%;
         margin: 0 auto;
-      
+
     }
+
     .second-of-first-row {
         width: 50%;
-        
+
     }
+
     .first-row-img {
         width: 150px;
     }
@@ -343,9 +524,10 @@ h1 {
     .second-row {
         width: 100%;
         margin: 0 auto;
-       
+
 
     }
+
     .second-row-col {
         padding: 0 14px;
     }
@@ -354,38 +536,41 @@ h1 {
     .third-row {
         width: 100%;
         margin: 0 auto;
-     
+
 
     }
+
     .img-row-3 {
         width: 150px;
         border-radius: 50%;
     }
+
     h1 {
         width: 97%;
         margin: 0 auto;
-       
+
     }
+
     .row-p {
         width: 97%;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 }
 
 
 /* debug */
 
-nav {
+/* nav {
     background-color: crimson;
-}
+} */
 
-main {
+/* main {
     background-color: darkorange;
-}
+} */
 
-footer {
+/* footer {
     background-color: brown;
-}
+} */
 
 /* .shadow {
     background-color: black;
