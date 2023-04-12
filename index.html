@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -41,22 +42,23 @@
             <div class="desktop-nav">
                 <!-- navigatore superiore -->
                 <div class="up-nav-desktop">
-                    <ul class="up-nav-desktop-list">
+                    <ul class="nav-desktop-list">
                         <li class="img-col"><img class="logo-desk-img" src="img/logo.svg" alt=""></li>
-                        <li class="img-col"><img class="home-img" src="img/home.svg" alt="" class="home-img">Home</li>
-                        <li class="img-col"><img class="search-img" src="img/search.svg" alt="">Cerca</li>
-                        <li class="img-col"><img class="libreria-img" src="img/libreria.svg" alt="">La tua libreria</li>
+                        <li class="img-col"><img class="home-img" src="img/home.svg" alt="" class="home-img"> Home</li>
+                        <li class="img-col"><img class="search-img" src="img/search.svg" alt=""> Cerca</li>
+                        <li class="img-col"><img class="libreria-img" src="img/libreria.svg" alt=""> La tua libreria
+                        </li>
 
                     </ul>
 
                 </div>
                 <!-- navigatore centrale -->
                 <div class="nav-center">
-                    <ul>
+                    <ul class="nav-desktop-list">
                         <li class="nav-center-li">
-                            <h1>PLAYLIST</h1>
+                            <h1 class="title-center-li">PLAYLIST</h1>
                         </li>
-                        <li class="nav-center-li"><i class="fa-solid fa-square-plus"></i>Crea playlist</li>
+                        <li class="nav-center-li-top"><i class="fa-solid fa-square-plus"></i>Crea playlist</li>
                         <li class="nav-center-li">Nome playlist</li>
                         <li class="nav-center-li">Nome playlist</li>
                         <li class="nav-center-li">Nome playlist</li>
@@ -71,9 +73,10 @@
                 </div>
                 <!-- navigatore di fondo -->
                 <div class="nav-down">
-                    <ul>
-                        <li class="nav-down-li"><i class="fa-regular fa-circle-down"></i></li>
-                        <li class="nav-down-li"><i class="fa-solid fa-user"></i></li>
+                    <ul class="nav-desktop-list">
+                        <li class="nav-down-li"><i class="fa-regular fa-circle-down"></i> Installa app</li>
+                        <hr>
+                        <li class="nav-down-li"><i class="fa-solid fa-user"></i> John Doe</li>
 
                     </ul>
                 </div>
@@ -83,7 +86,7 @@
         <main>
             <!-- SHADOW HEADER -->
             <div class="shadow">
-
+               <button>EFFETTUA L'UPGRADE</button>
             </div>
             <!-- HEADER MENU -->
             <div class="header-menu">
@@ -104,22 +107,34 @@
 
                         <div class="first-row-col">
                             <img class="first-row-img" src="img/metal_lifting.jpg" alt="">
+                            <div class="hover-play"> 
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h3 class="first-row-title"> Heavy Metal </h3>
                             <p class="first-row-p">Subtitle</p>
                         </div>
                         <div class="first-row-col">
                             <img class="first-row-img" src="img/stranger.jpeg" alt="">
+                            <div class="hover-play"> 
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h3 class="first-row-title">Stranger things, Vol.1(a Netflix Original Series Soundtrack)
                             </h3>
                             <p class="first-row-p">Kyle Dixon Micheal Stein</p>
                         </div>
                         <div class="first-row-col">
                             <img class="first-row-img" src="img/aquietplace.jpeg" alt="">
+                            <div class="hover-play"> 
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h3 class="first-row-title">A quite place</h3>
                             <p class="first-row-p"> Subtitle</p>
                         </div>
                         <div class="first-row-col">
                             <img class="first-row-img" src="img/split.jpeg" alt="">
+                            <div class="hover-play"> 
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h3 class="first-row-title">Split</h3>
                             <p class="first-row-p">Subtitle</p>
                         </div>
@@ -128,11 +143,17 @@
                     <div class="second-of-first-row">
                         <div class="second-of-first-row-col">
                             <img class="first-row-img" src="img/cure.jpeg" alt="">
+                            <div class="hover-play"> 
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h3 class="first-row-title">A cure for Wellness</h3>
                             <p class="first-row-p">Subtitle</p>
                         </div>
                         <div class="second-of-first-row-col">
                             <img class="first-row-img" src="img/sinister.jpeg" alt="">
+                            <div class="hover-play"> 
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h3 class="first-row-title">Sinister</h3>
                             <p class="first-row-p">Subtitle</p>
                         </div>
@@ -145,11 +166,17 @@
 
                     <div class="second-row-col">
                         <img class="first-row-img" src="img/radar.jpeg" alt="">
+                        <div class="hover-play"> 
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
                         <h3 class="first-row-title">Release Radar</h3>
 
                     </div>
                     <div class="second-row-col">
                         <img class="first-row-img" src="img/mixdaily.jpeg" alt="">
+                        <div class="hover-play"> 
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
                         <h3 class="first-row-title">Daily Mix 1</h3>
 
                     </div>
@@ -162,9 +189,15 @@
 
                     <div class="third-col">
                         <img class="img-row-3" src="img/youg.jpeg" alt="">
+                        <div class="hover-play"> 
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
                     </div>
                     <div class="third-col">
                         <img class="img-row-3" src="img/einaudi.jpeg" alt="">
+                        <div class="hover-play"> 
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,15 +206,22 @@
     <!-- footer -->
     <footer>
         <div class="footer-container">
+            <!--  first row -->
             <div class="row-first">
-                <img class="footer-img" src="img/player_left.jpg" alt="">
-                <h4></h4>
-                <p></p>
+                <div class="music-in-play">
+                    <img class="footer-img" src="img/player_left.jpg" alt="">
+                    <div class="music-play-name">
+                        <h4>Sinister</h4>
+                        <p>Brano nome</p>
+                    </div>
+                </div>
+
                 <div class="fonts-row">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
+            <!-- center row -->
             <div class="row-center">
                 <div class="center-col">
                     <div class="col-up">
@@ -196,10 +236,12 @@
                     </div>
                 </div>
             </div>
+            <!-- row-right -->
             <div class="row-right">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
+
                 <div class="col-right">
                 </div>
             </div>

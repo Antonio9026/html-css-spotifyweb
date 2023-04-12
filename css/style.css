@@ -7,7 +7,8 @@
 body {
     width: 100%;
     height: 100vh;
-    font-family:  'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    ;
 }
 
 .container {
@@ -116,9 +117,11 @@ li {
 
 
 }
-.img-col:hover{
-color: white;
+
+.img-col:hover {
+    color: white;
 }
+
 .nav-center-li {
     font-size: 10px;
 }
@@ -187,23 +190,47 @@ button {
 
 }
 
-/* <!-- regole menu musica --> */
+/* <!-- regole menu musica hover--> */
 .first-row-col {
+
+    
     position: relative;
 }
 
 .hover-play {
-    
+    width: 50%;
+    margin: 0 auto;
+    visibility: hidden;
     position: absolute;
     bottom: 100px;
-    left: 50px;
+  left: 45px;
+
 }
 
-.hover-play:hover {
- visibility: visible;
+.first-row-col:hover .hover-play {
+    visibility: visible;
     position: absolute;
-    bottom: 100px;
-    left: 50px;
+}
+.second-of-first-row-col{
+    position: relative;
+}
+.second-of-first-row-col:hover .hover-play{
+    visibility: visible;
+    position: absolute;
+    bottom: 60px;
+    left: 35px;
+}
+
+.second-row-col{
+   
+    position: relative;
+}
+.second-row-col:hover .hover-play {
+   
+    visibility: visible;
+    position: absolute;
+    bottom: 60px;
+    left: 45px;
 }
 
 /* <!-- prima riga menu musica --> */
@@ -513,6 +540,7 @@ h1 {
 
     .second-of-first-row {
         width: 50%;
+        justify-content: space-around;
 
     }
 
