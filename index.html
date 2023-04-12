@@ -5,24 +5,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-   
-        <div class="container">
-            <nav>
+    <div class="container">
+        <!-- navigatore smartphone -->
+        <nav>
+            <!-- navigatore superiore -->
+            <div class="smart-nav">
+                <div class="up-nav">
+                    <ul class="up-nav-list">
+                        <li class="logo"><img class="logo-img" src="img/logo-small.svg" alt=""></li>
+                        <li class="home"><img class="home-img" src="img/home.svg" alt="" class="home-img"></li>
+                        <li class="search"><img class="search-img" src="img/search.svg" alt=""></li>
+                        <li class="libreria"><img class="libreria-img" src="img/libreria.svg" alt=""></li>
 
-            </nav>
-            <main>
+                    </ul>
 
-            </main>
+                </div>
+                <!-- navigatore di fondo -->
+                <div class="nav-down">
+                    <ul class="nav-down-list">
+                        <li class="arrow"><i class="fa-regular fa-circle-down"></i></li>
+                        <li class="user"><i class="fa-solid fa-user"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- navigatore desktop -->
+            <div class="desktop-nav">
+                <!-- navigatore superiore -->
+                <div class="up-nav-desktop">
+                    <ul class="up-nav-desktop-list">
+                        <li class="img-col"><img class="logo-desk-img" src="img/logo.svg" alt=""></li>
+                        <li class="img-col"><img class="home-img" src="img/home.svg" alt="" class="home-img">Home</li>
+                        <li class="img-col"><img class="search-img" src="img/search.svg" alt="">Cerca</li>
+                        <li class="img-col"><img class="libreria-img" src="img/libreria.svg" alt="">La tua libreria</li>
+
+                    </ul>
+
+                </div>
+                <!-- navigatore centrale -->
+                <div class="nav-center">
+                    <ul>
+                        <li class="nav-center-li">
+                            <h1>PLAYLIST</h1>
+                        </li>
+                        <li class="nav-center-li"><i class="fa-solid fa-square-plus"></i>Crea playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+                        <li class="nav-center-li">Nome playlist</li>
+
+
+                    </ul>
+
+                </div>
+                <!-- navigatore di fondo -->
+                <div class="nav-down">
+                    <ul>
+                        <li class="nav-down-li"><i class="fa-regular fa-circle-down"></i></li>
+                        <li class="nav-down-li"><i class="fa-solid fa-user"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <main>
+            <!-- SHADOW HEADER -->
+            <div class="shadow">
+
+            </div>
+            <!-- HEADER MENU -->
+            <div class="header-menu">
+                <ul class="header-menu-list">
+                    <li class="header-menu-li">IN EVIDENZA</li>
+                    <li class="header-menu-li">PODCAST</li>
+                    <li class="header-menu-li">CLASSIFICHE</li>
+                    <li class="header-menu-li">GENERI E MOOD</li>
+                    <li class="header-menu-li">NUOVE USCITE</li>
+                    <li class="header-menu-li">SCOPRI</li>
+                </ul>
+            </div>
+            <div class="row-wrpapper">
+                <!-- prima riga menu musica -->
+                <h1>Recently played</h1>
+                <div class="container-first-row">
+                    <div class="first-row">
+
+                        <div class="first-row-col">
+                            <img class="first-row-img" src="img/metal_lifting.jpg" alt="">
+                            <h3 class="first-row-title"> Heavy Metal </h3>
+                            <p class="first-row-p">Subtitle</p>
+                        </div>
+                        <div class="first-row-col">
+                            <img class="first-row-img" src="img/stranger.jpeg" alt="">
+                            <h3 class="first-row-title">Stranger things, Vol.1(a Netflix Original Series Soundtrack)
+                            </h3>
+                            <p class="first-row-p">Kyle Dixon Micheal Stein</p>
+                        </div>
+                        <div class="first-row-col">
+                            <img class="first-row-img" src="img/aquietplace.jpeg" alt="">
+                            <h3 class="first-row-title">A quite place</h3>
+                            <p class="first-row-p"> Subtitle</p>
+                        </div>
+                        <div class="first-row-col">
+                            <img class="first-row-img" src="img/split.jpeg" alt="">
+                            <h3 class="first-row-title">Split</h3>
+                            <p class="first-row-p">Subtitle</p>
+                        </div>
+
+                    </div>
+                    <div class="second-of-first-row">
+                        <div class="second-of-first-row-col">
+                            <img class="first-row-img" src="img/cure.jpeg" alt="">
+                            <h3 class="first-row-title">A cure for Wellness</h3>
+                            <p class="first-row-p">Subtitle</p>
+                        </div>
+                        <div class="second-of-first-row-col">
+                            <img class="first-row-img" src="img/sinister.jpeg" alt="">
+                            <h3 class="first-row-title">Sinister</h3>
+                            <p class="first-row-p">Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- seconda riga menu musica -->
+                <h1>Creato per John Doe</h1>
+                <p class="row-p">Più ascolti, più accurati saranno i suggerimenti</p>
+                <div class="second-row">
+
+                    <div class="second-row-col">
+                        <img class="first-row-img" src="img/radar.jpeg" alt="">
+                        <h3 class="first-row-title">Release Radar</h3>
+
+                    </div>
+                    <div class="second-row-col">
+                        <img class="first-row-img" src="img/mixdaily.jpeg" alt="">
+                        <h3 class="first-row-title">Daily Mix 1</h3>
+
+                    </div>
+                </div>
+                <!-- terza riga menu musica -->
+                <h1>Artisti più popolari</h1>
+                <p class="row-p">Più ascolti, più accurati saranno i suggerimenti</p>
+                <div class="third-row">
+
+
+                    <div class="third-col">
+                        <img class="img-row-3" src="img/youg.jpeg" alt="">
+                    </div>
+                    <div class="third-col">
+                        <img class="img-row-3" src="img/einaudi.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="row-first">
+                <img class="footer-img" src="img/player_left.jpg" alt="">
+                <h4></h4>
+                <p></p>
+                <div class="fonts-row">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div class="row-center">
+                <div class="center-col">
+                    <div class="col-up">
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div class="col-down">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row-right">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="col-right">
+                </div>
+            </div>
         </div>
-        <footer>
+    </footer>
 
-        </footer>
-   
+
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-/* regole generali */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,6 @@
 body {
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
 }
 
 .container {
@@ -17,171 +15,363 @@ body {
     display: flex;
 }
 
-.menuphone {
+nav {
     width: 50px;
-    height: 100%
-}
-.menudesktop{
-    display: none;
-}
-.shadow {
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 800px;
+    height: 100%;
 }
 
 main {
-    width: calc(100% - 50px);
-    height: calc(100%-80px);
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+   
 }
 
-.menu-col {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style-type: none;
-    font-size: 10px;
-}
-.menu-item{
-    padding: 10px 0;
-}
 
 footer {
     height: 80px;
+   ;
+}
+
+/* regole navigatore smartphone */
+.smart-nav {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+
 
 }
 
-/* regole navigator */
-.favicon-col {
+.up-nav {
+    height: 50%;
+}
+
+.up-nav-list {
+    height: 400px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-down {
+    height: 50%;
+}
+
+.nav-down-list {
+    height: 400px;
+    padding-top: 260px;
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+.desktop-nav {
+    display: none;
+}
+
+
+.logo-img {
+    width: 20px;
+
+}
+
+.home-img {
+    width: 20px;
+}
+
+.search-img {
+    width: 20px;
+}
+
+.libreria-img {
+    width: 20px;
+}
+
+.fa-circle-down {
+    font-size: 20px;
+    color: white;
+}
+
+.fa-user {
+    font-size: 20px;
+    color: white;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* regole music menu */
+.shadow {
+    height: 80px;
+    background-color: black;
+    opacity: 0.5;
+  
+}
+
+/* <!--REGOLE HEADER MENU --> */
+.header-menu-list {
+    width: 100%;
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-#favicon {
-    width: 25px;
-    filter: brightness(0) saturate(100%) invert(101%) sepia(20%) saturate(174%) hue-rotate(13deg) brightness(104%) contrast(118%);
+.header-menu-li {
+    font-size: 10px;
+    padding: 10px 10px;
 }
 
-.home-col {
-    position: relative;
-}
-
-.search-col {
-    position: relative;
-}
-
-.library-col {
-    position: relative;
-}
-
-#home {
-    width: 25px;
-    position: absolute;
-    top: 15px;
-    left: 12px;
-}
-
-#search {
-    width: 25px;
-    position: absolute;
-    top: 50px;
-    left: 12px;
-}
-
-#libreria {
-    width: 25px;
-    position: absolute;
-    top: 80px;
-    left: 12px;
-}
-
-/* regole logo-foot */
-.logo-foot {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-}
-
-.arrow {
-    font-size: 25px;
-    position: absolute;
-    bottom: 70px;
-    left: 12px;
-    color: white;
-}
-
-.user {
-    font-size: 25px;
-    position: absolute;
-    bottom: 30px;
-    left: 12px;
-    color: white;
-}
-/* regole recently played */
-.music-row{
+/* <!-- prima riga menu musica --> */
+.first-row {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.music-col{
-    width: calc(100%/2);
-}
-.music-title{
-    width: 80%;
-    margin: 0 auto;  
-    font-size: 10px;
-    padding: 20px 0;
-}
-.music-img{
-    height: 120px;
-    width: 120px;
-}
-.music-img-popular{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-}
-.info{
+
+.second-of-first-row {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
-    font-size: 10px;
+}
+
+
+
+.first-row-col {
+    width: calc(100%/2);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.first-row-img {
+    width: 120px;
+}
+
+.first-row-title {
+    font-size: 13px;
+}
+
+.first-row-p {
+    font-size: 13px;
+
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
     padding: 10px 0;
 }
 
-/* versione smartphone nav menu desktop */
+/* <!-- seconda riga menu musica --> */
+.second-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.row-p {
+    width: 80%;
+    margin: 0 auto;
+
+    padding-bottom: 20px;
+}
+
+/* <!-- regole terza riga menu musica --> */
+.third-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.img-row-3 {
+    width: 120px;
+    border-radius: 50%;
+}
+/* regole footer */
+.footer-container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-center{
+    text-align: center;
+}
+.footer-img{
+    width: 30px;
+}
+.row-right{
+    display: flex;
+   
+}
+.col-right{
+   margin-top: 5px;
+   margin-left: 5px;
+}
+.row-first{
+    display: flex;
+}
+.col-down{
+    height: 5px;
+    width: 100px;
+    background-color: white;
+}
+.col-right{
+    height: 5px;
+    width: 60px;
+    background-color: white;
+}
+
+
+/* regole small screen */
 @media screen and (min-width:420px) {
-    /* regole nav */
-    .menudesktop{
-        display: block;
-        width: 150px;
-    }
-    .menuphone{
+
+    /* <!-- regole navigatore desktop --> */
+    .smart-nav {
         display: none;
     }
-    .logo-desktop{
-     width: 80%;
-     margin: 0 auto;
+
+    .desktop-nav {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        color: white;
     }
-    #icon{
-       width: 100px; 
+
+    nav {
+        width: 250px;
+        height: 100%;
+    }
+
+    /* <!--regole navigatore superiore --> */
+    .logo-desk-img {
+        width: 80px;
+    }
+
+    .nav-center {
+        margin-top: 40px;
+        margin-bottom: 180px;
+    }
+
+}
+
+/* regloe tablet */
+@media screen and (min-width:780px) {
+
+    /* <!-- prima riga menu musica --> */
+    .second-of-first-row {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .first-row-col {
+        width: calc(100%/4);
+
+    }
+
+    .second-of-first-row-col {
+        padding: 0 12px;
+    }
+
+    /* <!-- seconda riga menu musica --> */
+    .second-row {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .second-row-col {
+        padding: 0 12px;
+    }
+
+    /* <!-- regole terza riga menu musica --> */
+    .third-row {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .third-col {
+        padding: 0 10px;
+    }
+    
+}
+
+/* regloe deskto */
+@media screen and (min-width:1280px) {
+    /* <!-- prima riga menu musica --> */
+    .container-first-row{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .first-row {
+        width: 100%;
+        margin: 0 auto;
+      
+    }
+    .second-of-first-row {
+        width: 50%;
+        
+    }
+    .first-row-img {
+        width: 150px;
+    }
+
+    /* <!-- seconda riga menu musica --> */
+    .second-row {
+        width: 100%;
+        margin: 0 auto;
+       
+
+    }
+    .second-row-col {
+        padding: 0 14px;
+    }
+
+    /* <!-- regole terza riga menu musica --> */
+    .third-row {
+        width: 100%;
+        margin: 0 auto;
+     
+
+    }
+    .img-row-3 {
+        width: 150px;
+        border-radius: 50%;
+    }
+    h1 {
+        width: 97%;
+        margin: 0 auto;
+       
+    }
+    .row-p {
+        width: 97%;
+        margin: 0 auto; 
     }
 }
-/* versione tablet */
-@media screen and (min-width:780px) {}
 
-/* versionne desktop */
-@media screen and (max-width:1280px) {}
 
 /* debug */
 
@@ -197,6 +387,7 @@ footer {
     background-color: brown;
 }
 
-.shadow {
+/* .shadow {
     background-color: black;
-}
+    height: 80px;
+} */
