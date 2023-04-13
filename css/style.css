@@ -53,7 +53,7 @@ footer {
 }
 
 .up-nav-list {
-    height: 400px;
+    height: 200px;
     text-align: center;
     list-style-type: none;
 }
@@ -464,7 +464,7 @@ h1 {
 
 
 /* regole small screen */
-@media screen and (min-width:420px) {
+@media all and (min-width:420px) {
 
     /* <!-- regole navigatore desktop --> */
    main{
@@ -507,7 +507,7 @@ h1 {
 }
 
 /* regloe tablet */
-@media screen and (min-width:780px) {
+@media all and (min-width:780px) {
 
     /* <!-- prima riga menu musica --> */
     .second-of-first-row {
@@ -568,7 +568,7 @@ h1 {
 }
 
 /* regloe deskto */
-@media screen and (min-width:1280px) {
+@media all and (min-width:1280px) {
 
     /* <!-- prima riga menu musica --> */
     .container-first-row {
@@ -591,7 +591,7 @@ h1 {
     }
 
     .first-row-img {
-        width: 150px;
+        width: 200px;
     }
 
     /* <!-- seconda riga menu musica --> */
@@ -615,7 +615,7 @@ h1 {
     }
 
     .img-row-3 {
-        width: 150px;
+        width: 200px;
         border-radius: 50%;
     }
 
